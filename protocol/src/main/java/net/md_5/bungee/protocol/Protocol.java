@@ -54,23 +54,23 @@ public enum Protocol
             {
 
                 {
-                    TO_CLIENT.registerPacket( 0x00, 0x20, KeepAlive.class );
-                    TO_CLIENT.registerPacket( 0x01, 0x24, Login.class );
+                    TO_CLIENT.registerPacket( 0x00, 0x1F, KeepAlive.class );
+                    TO_CLIENT.registerPacket( 0x01, 0x23, Login.class );
                     TO_CLIENT.registerPacket( 0x02, 0x0F, Chat.class );
-                    TO_CLIENT.registerPacket( 0x07, 0x34, Respawn.class );
-                    TO_CLIENT.registerPacket( 0x38, 0x2E, PlayerListItem.class ); // PlayerInfo
+                    TO_CLIENT.registerPacket( 0x07, 0x33, Respawn.class );
+                    TO_CLIENT.registerPacket( 0x38, 0x2D, PlayerListItem.class ); // PlayerInfo
                     TO_CLIENT.registerPacket( 0x3A, 0x0E, TabCompleteResponse.class );
-                    TO_CLIENT.registerPacket( 0x3B, 0x40, ScoreboardObjective.class );
-                    TO_CLIENT.registerPacket( 0x3C, 0x43, ScoreboardScore.class );
-                    TO_CLIENT.registerPacket( 0x3D, 0x39, ScoreboardDisplay.class );
-                    TO_CLIENT.registerPacket( 0x3E, 0x42, Team.class );
+                    TO_CLIENT.registerPacket( 0x3B, 0x3F, ScoreboardObjective.class );
+                    TO_CLIENT.registerPacket( 0x3C, 0x42, ScoreboardScore.class );
+                    TO_CLIENT.registerPacket( 0x3D, 0x38, ScoreboardDisplay.class );
+                    TO_CLIENT.registerPacket( 0x3E, 0x41, Team.class );
                     TO_CLIENT.registerPacket( 0x3F, 0x18, PluginMessage.class );
                     TO_CLIENT.registerPacket( 0x40, 0x1A, Kick.class );
-                    TO_CLIENT.registerPacket( 0x45, 0x46, Title.class );
-                    TO_CLIENT.registerPacket( 0x46, 0x1E, SetCompression.class );
-                    TO_CLIENT.registerPacket( 0x47, 0x49, PlayerListHeaderFooter.class );
+                    TO_CLIENT.registerPacket( 0x45, 0x45, Title.class );
+                    TO_CLIENT.registerPacket( 0x46, 0xFF, SetCompression.class );
+                    TO_CLIENT.registerPacket( 0x47, 0x48, PlayerListHeaderFooter.class );
 
-                    TO_SERVER.registerPacket( 0x00, 0x0B, KeepAlive.class );
+                    TO_SERVER.registerPacket( 0x00, 0x1B, KeepAlive.class );
                     TO_SERVER.registerPacket( 0x01, 0x02, Chat.class );
                     TO_SERVER.registerPacket( 0x14, 0x01, TabCompleteRequest.class );
                     TO_SERVER.registerPacket( 0x15, 0x04, ClientSettings.class );
