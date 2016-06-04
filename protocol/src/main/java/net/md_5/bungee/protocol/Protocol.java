@@ -129,7 +129,8 @@ public enum Protocol
                     PlayerListHeaderFooter.class,
                     map( ProtocolConstants.MINECRAFT_1_8, 0x47 ),
                     map( ProtocolConstants.MINECRAFT_1_9, 0x48 ),
-                    map(ProtocolConstants.MINECRAFT_1_9_4, 0x47 )
+                    map( ProtocolConstants.MINECRAFT_1_9_4, 0x47 ),
+                    map( ProtocolConstants.MINECRAFT_1_10_PRE, 0x47 )
             );
 
             TO_SERVER.registerPacket(
