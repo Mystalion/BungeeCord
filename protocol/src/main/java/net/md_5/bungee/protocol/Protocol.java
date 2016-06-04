@@ -254,11 +254,13 @@ public enum Protocol
         private final TIntObjectMap<List<Integer>> linkedProtocols = new TIntObjectHashMap<>();
         {
             linkedProtocols.put( ProtocolConstants.MINECRAFT_1_8, Arrays.asList(
-                    ProtocolConstants.MINECRAFT_1_9
+                ProtocolConstants.MINECRAFT_1_9
             ));
-            linkedProtocols.put( ProtocolConstants.MINECRAFT_1_9, Arrays.asList(ProtocolConstants.MINECRAFT_1_9_1,
+            linkedProtocols.put( ProtocolConstants.MINECRAFT_1_9, Arrays.asList(
+                ProtocolConstants.MINECRAFT_1_9_1,
                 ProtocolConstants.MINECRAFT_1_9_2,
-                ProtocolConstants.MINECRAFT_1_9_4
+                ProtocolConstants.MINECRAFT_1_9_4,
+                ProtocolConstants.MINECRAFT_1_10_PRE
             ));
         }
 
